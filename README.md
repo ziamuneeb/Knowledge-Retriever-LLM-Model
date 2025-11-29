@@ -1,14 +1,14 @@
 # KnowledgeRetriever LLM Model
 
-1. Project Title
+## Project Title
 
 KnowledgeRetriever – A Retrieval-Augmented LLM that answers questions from your notes or documents.
 
-2. Description
+## Description
 
 KnowledgeRetriever is a Python-based tool that leverages LangChain, vector embeddings (FAISS), and GPT LLM Model to answer questions from text data such as lecture notes, documentation, or research papers. It splits your text into chunks, stores them in a vector database, and performs retrieval-augmented generation (RAG) to provide accurate answers.
 
-3. Features
+## Features
 
 Split text into manageable chunks using RecursiveCharacterTextSplitter.
 
@@ -20,20 +20,20 @@ Retrieve answers to user queries with context from your notes.
 
 Easily extendable for multiple documents or datasets.
 
-4. Installation
+# Installation
 
 Step-by-step instructions:
 
-# Clone the repo
+## Clone the repo
 git clone link
 
 
-# Create a virtual environment
+## Create a virtual environment
 python -m venv venv
-# Activate it
+## Activate it
 venv\Scripts\activate  # Windows
-# or
+## or
 source venv/bin/activate  # macOS/Linux
 
-# Install dependencies
+## Install dependencies
 pip install -r requirements.txt
