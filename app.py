@@ -7,7 +7,11 @@ from langchain_core.output_parsers import StrOutputParser
 # Step 1: Load notes
 with open("data/ML.txt", "r") as f:
     text = f.read()
-API_KEY = ""
+
+# Retrieving API Key as a environmnetal variable
+API_KEY = os.environ.get("OPENAI_API_KEY")
+
+
 # Step 2: Split notes into chunks
 splitter = RecursiveCharacterTextSplitter(chunk_size=300, chunk_overlap=20)
 docs = splitter.split_text(text)
@@ -52,3 +56,4 @@ response = chain.invoke({"question": query})
 
 print("Q:", query)
 print("A:", response)
+
